@@ -168,6 +168,7 @@ function zpdbrd_admin_dashboard_customise() {
     remove_meta_box( 'dashboard_activity', 'dashboard', 'normal' );                 // Activity
     remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );                // At A Glance
 	remove_action('welcome_panel', 'wp_welcome_panel');
+	remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal' );              // Site Health
 
     /**
      * To remove dashboard widgets created by other plugins, search that plugin folder for "wp_add_dashboard_widget"
